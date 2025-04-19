@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Website</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu_side">
+        <img src="img/MusicMania.webp" width="100px" alt="" />
+        <!-- <h1>Playlist</h1> -->
+        <div class="playlist">
+          <h4 class="active">
+            <span></span><i class="bi bi-music-note-beamed"></i> Playlist
+          </h4>
+          <h4>
+            <span></span><i class="bi bi-music-note-beamed"></i> Last Listening
+          </h4>
+          <h4>
+            <span></span><i class="bi bi-music-note-beamed"></i> Recommended
+          </h4>
+        </div>
+
+        <div class="menu_song">
+          <li class="songItem">
+            <span>01</span>
+            <img src="img/gulabi shadi.jpg" alt="" />
+            <h5>
+              Gulabi Sadi <br />
+              <div class="subtitle">Sanju Rathod</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+          </li>
+
+          <li class="songItem">
+            <span>02</span>
+            <img src="img/sajni.jpg" alt="" />
+            <h5>
+              Sajni re <br />
+              <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+          </li>
+
+          <li class="songItem">
+            <span>03</span>
+            <img src="img/blockbuster.jpg" alt="" />
+            <h5>
+              Blockbuster <br />
+              <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+          </li>
+
+          <li class="songItem">
+            <span>04</span>
+            <img src="img/teri jhuki najar1.jpg" alt="" />
+            <h5>
+             Teri jhuki Najar <br />
+              <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+          </li>
+
+          <li class="songItem">
+            <span>05</span>
+            <img src="img/tu hai kahan.jpg" alt="" />
+            <h5>
+              Tu hai Kaha <br />
+              <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+          </li>
+
+          <li class="songItem">
+            <span>06</span>
+            <img src="img/malang sajna.jpg" alt="" />
+            <h5>
+              Malang Sajna <br />
+              <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+          </li>
+
+          <li class="songItem">
+            <span>07</span>
+            <img src="img/mere bina.jpg" alt="" />
+            <h5>
+              Mere bina <br />
+              <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+          </li>
+
+          <li class="songItem">
+            <span>08</span>
+            <img src="img/afgan jalebi.jpg" alt="" />
+            <h5>
+              Afgan jalebi <br />
+              <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+          </li>
+          
+        </div>
+      </div>
+
+      <div class="song_side">
+        <nav>
+          <ul>
+            <li>Discover <span></span></li>
+            <li>MY LIBRARY</li>
+            <li>RADIO</li>
+          </ul>
+          <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Music" />
+          </div>
+
+          <div class="user">
+            <img src="img/musicmania.png" alt="" />
+          </div>
+        </nav>
+
+        <div class="content">
+          <h1>Discover Your Soundtrack</h1>
+          <p>
+            Music can’t solve all your problems, but it can give you a good
+            reason to dance. <br />Music is a world within itself; it’s a
+            language we all understand
+          </p>
+          <div class="buttons">
+            <button>PLAY</button>
+            <button>FOLLOW</button>
+          </div>
+        </div>
+
+        <div class="popular_song">
+          <div class="h4">
+            <h4>Popular Song</h4>
+            <div class="btn_s">
+              <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+              <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+            </div>
+          </div>
+
+          <div class="pop_song">
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/sajni.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+              </div>
+              <h5>
+                Sajni re <br />
+                <div class="subtitle">Arijit Singh</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/dhoonde akhiya.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+              </div>
+              <h5>
+                Dhoonde Akhiya <br />
+                <div class="subtitle">Yaseer Desai</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/dulhan banami.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+              </div>
+              <h5>
+                Dulhan Banami <br />
+                <div class="subtitle">Acharjya Borpatra& Kiran Dash</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/gujarish.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+              </div>
+              <h5>
+                Guzarish <br />
+                <div class="subtitle">Sonu nigam & Javed ali</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/khuda jane.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+              </div>
+              <h5>
+                Khuda Jane <br />
+                <div class="subtitle">KK & Shilapa Rao</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/teri jhuki najar1.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+              </div>
+              <h5>
+                Teri Jhuki Najar <br />
+                <div class="subtitle">Arijit Singh</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/malang sajna.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+              </div>
+              <h5>
+                Malang Sajna <br />
+                <div class="subtitle">Sachet & Parampara</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/haar fun maula.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+              </div>
+              <h5>
+                Har funn Maula<br />
+                <div class="subtitle">Vishal Dadlani & Zara khan</div>
+              </h5>
+            </li>
+
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/mahi ve.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+              </div>
+              <h5>
+                Mahi Ve <br />
+                <div class="subtitle">A.R Rahman</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/Butta-Bomma.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+              </div>
+              <h5>
+                Butta Bomma<br />
+                <div class="subtitle">Arman Malik</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/chaleya.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+              </div>
+              <h5>
+                Chaleya<br />
+                <div class="subtitle">Arijit Singh</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/blockbuster.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+              </div>
+              <h5>
+                Blockbuster<br />
+                <div class="subtitle">Thaman</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/arabic.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+              </div>
+              <h5>
+                Arabic Kuthu<br />
+                <div class="subtitle">Anirudh</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/afgan jalebi.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+              </div>
+              <h5>
+                Afgan jalebi<br />
+                <div class="subtitle">Asrar</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/girl i need you.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+              </div>
+              <h5>
+                Girl I need you<br />
+                <div class="subtitle">Arijit Singh & Meat bros</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/gulabi shadi.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="24"></i>
+              </div>
+              <h5>
+                Gulabi Sadi<br />
+                <div class="subtitle">Sanju Rathod</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/chammak chalo.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="25"></i>
+              </div>
+              <h5>
+                Chammak Chhalo<br />
+                <div class="subtitle">Akon</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/heeriye.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="26"></i>
+              </div>
+              <h5>
+                Heeriye<br />
+                <div class="subtitle">Arijit Singh & Jasleen Royal</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/illuminati.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="27"></i>
+              </div>
+              <h5>
+                Illuminati<br />
+                <div class="subtitle">Dabzee</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/khoya h.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
+              </div>
+              <h5>
+                Khoya Hai<br />
+                <div class="subtitle">Neeti Mohan & Kaala Bhairava</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/kolavari1.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="29"></i>
+              </div>
+              <h5>
+                Kolaveri<br />
+                <div class="subtitle">Dhanush</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/mari.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="30"></i>
+              </div>
+              <h5>
+                Maari<br />
+                <div class="subtitle">Dhanush & Anirudh Ravichandar</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/Kurchi Madathapetti.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="31"></i>
+              </div>
+              <h5>
+                Kurchi Madathapetti<br />
+                <div class="subtitle">Sri Krishna & Sahiti Chaganti</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/unakku than.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="32"></i>
+              </div>
+              <h5>
+                Unakku Than<br />
+                <div class="subtitle">Santosh Narayanan & Dhvani Kailas</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/manjar h naya.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="33"></i>
+              </div>
+              <h5>
+                Manjar Hai Naya <br />
+                <div class="subtitle">Shantanu Sudame & Sushant Sachdev</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/manohari.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="34"></i>
+              </div>
+              <h5>
+                Manohari<br />
+                <div class="subtitle">Divya kumar & Neeti mohan</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/mere bina.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="35"></i>
+              </div>
+              <h5>
+                Mere Bina<br />
+                <div class="subtitle">Nikhil Dsouza</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/nakhrewali.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="36"></i>
+              </div>
+              <h5>
+                Nakhrewali<br />
+                <div class="subtitle">Rohit Raut & Sonali Sonawane</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/meri banogi kya.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="37"></i>
+              </div>
+              <h5>
+                Meri Banogi Kya<br />
+                <div class="subtitle">Rita Riba</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/meri laila.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="38"></i>
+              </div>
+              <h5>
+                O Meri Laila<br />
+                <div class="subtitle">Atif Aslam & Jyotica Tangri</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/Prasthanam.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="39"></i>
+              </div>
+              <h5>
+                Prasthanam<br />
+                <div class="subtitle">Dev Negi</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/oonchi deware.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="40"></i>
+              </div>
+              <h5>
+                Oochi Oochi Deeware<br />
+                <div class="subtitle">Arijit Singh</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/uanta vama.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="41"></i>
+              </div>
+              <h5>
+                Oo Antava mama<br />
+                <div class="subtitle">Indravathi Chauhan</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/rowdy baby.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="42"></i>
+              </div>
+              <h5>
+                Rowdy Baby<br />
+                <div class="subtitle">Dhanush & Dhee</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/satranga.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="43"></i>
+              </div>
+              <h5>
+                Satranga<br />
+                <div class="subtitle">Arijit Singh</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/seeti maar.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="44"></i>
+              </div>
+              <h5>
+                Seeti maar<br />
+                <div class="subtitle">Jaspreet Jasz & Rita</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/sabashiya.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="45"></i>
+              </div>
+              <h5>
+                Sabashiya<br />
+                <div class="subtitle">Shilpa Rao, Anand Bhaskar & Abhijeet Srivastava</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/sau tarah ke.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="46"></i>
+              </div>
+              <h5>
+                Sau Tarah Ke<br />
+                <div class="subtitle">Janita Gandhi & Amit Mishra</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/shikayata.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="47"></i>
+              </div>
+              <h5>
+                Shikayat<br />
+                <div class="subtitle">Usama ali & Ahad khan</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/surili.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="48"></i>
+              </div>
+              <h5>
+                Surili Akhiyo Wale<br />
+                <div class="subtitle">Sajid Wajid</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/tu hai kahan.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="49"></i>
+              </div>
+              <h5>
+                Tu Hai Kaha<br />
+                <div class="subtitle">Usama Ali & Ahad khan</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/tum se hi.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="50"></i>
+              </div>
+              <h5>
+                Tum Se hi <br />
+                <div class="subtitle">Mohit Chauhan</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/tum tum.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="51"></i>
+              </div>
+              <h5>
+                Tum Tum<br />
+                <div class="subtitle">Sri Vardhini, Aditi, Satya Yamini</div>
+              </h5>
+            </li>
+
+            
+            <li class="songItem">
+              <div class="img_play">
+                <img src="img/tu hi meri sab h.jpg" alt="" />
+                <i class="bi playListPlay bi-play-circle-fill" id="52"></i>
+              </div>
+              <h5>
+                Tu hi Meri Shab hai<br />
+                <div class="subtitle">KK</div>
+              </h5>
+            </li>
+
+          </div>
+        </div>
+
+        <div class="popular_artists">
+            <div class="h4">
+                <h4>Popular Artists</h4>
+                <div class="btn_s">
+                  <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                  <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                </div>
+            </div>
+
+            <div class="item">
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/pritam.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/ar rahman.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/atif aslam.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/honeysingh1.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/sonunigam.webp" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+
+                <li>
+                    <img src="img/arijit.jpg" alt="">
+                </li>
+            </div>
+    
+        </div>
+      </div>
+
+      <div class="master_play">
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+        <img src="img/gulabi shadi.jpg" alt="" id="master_play" />
+        <h5 id="title">
+          Gulabi Sadi
+          <div class="subtitle">Sanju Rathod</div>
+        </h5>
+
+        <div class="icon">
+          <i class="bi suffle bi-music-note-beamed">next</i>
+          <i class="bi bi-skip-start-fill"></i>
+          <i class="bi bi-play-fill"></i>
+          <i class="bi bi-skip-end-fill"></i>
+          <i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+        </div>
+
+        <span id="currentstart">0:00</span>
+
+        <div class="bar">
+          <input type="range" id="seek" min="0" max="100" />
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+
+        <span id="currentEnd">0:30</span>
+
+        <div class="vol">
+          <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+          <input type="range" min="0" max="100" id="vol" />
+          <div class="vol_bar"></div>
+          <div class="dot" id="vol_dot"></div>
+        </div>
+      </div>
+    </header>
+    <script src="app.js"></script>
+  </body>
+</html>
